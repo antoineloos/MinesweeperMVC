@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="JavaFXApplication5.jar" size="16577" download="eager" />
+    <jar href="JavaFXApplication5.jar" size="18117" download="eager" />
     <jar href="lib/javatuples-1.2.jar" size="65508" download="eager" />
     <jar href="lib/jfoenix.jar" size="2154906" download="eager" />
   </resources>

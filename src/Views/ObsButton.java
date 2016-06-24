@@ -20,15 +20,17 @@ import javafx.scene.input.MouseEvent;
  * @author Epulapp
  */
 public class ObsButton extends JFXButton implements Observer  {
-
+    private String _color;
     public JFXButton btn;
-    public ObsButton(Case courant, PlateauNormal plt)
+    public ObsButton(Case courant, PlateauNormal plt, String color)
     {
         btn = new JFXButton();
         btn.setOnMouseClicked(new CustomEventHandler(courant));
         btn.setMinHeight(70);
         btn.setMinWidth(70);
-        String style=" -fx-border-color: white; " + "-fx-border-width: 3;"+"-fx-background-color: #9CC4E4;";
+        _color = color;
+        String style=" -fx-border-color: white; " + "-fx-border-width: 3;"+"-fx-background-color: "+color+";";
+        
         btn.setStyle(style);
     }
     @Override
@@ -50,7 +52,7 @@ public class ObsButton extends JFXButton implements Observer  {
          else
          {
              
-             style += "-fx-background-color : #9CC4E4;";
+             style += "-fx-background-color: "+_color+";";
              style +="-fx-graphic: url('"+ courantCase.getUrlimg() +"');";
          }
         

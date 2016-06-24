@@ -33,7 +33,7 @@ public class JavaFXApplication5 extends Application {
         Plateau Plt = new PlateauNormal();
         Plt.addObserver(PltView);
         root.getChildren().add(PltView.GetrootGrid());
-        Scene scene = new Scene(root, 800, 800);
+        Scene scene = new Scene(root, 1200, 1000);
         primaryStage.setTitle("Demineur");
         primaryStage.setScene(scene);
         primaryStage.show();

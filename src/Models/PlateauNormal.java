@@ -54,7 +54,8 @@ public class PlateauNormal extends Plateau {
              Platform.runLater(() -> setLbTimer(String.valueOf(tmp+1)));  
             ;
         }},1000, 1000);
-        nbbomb = 10;
+        if(nbbomb==0) nbbomb=10;
+        if(difficulte==0) nbbomb=10;
        
         
 
